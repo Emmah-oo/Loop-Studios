@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.main-header {
+  background: url(images/desktop/image-hero.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  align-self: center;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  padding: 20px;
+  position: relative;
+}
+
+.navbar nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: ease-in 0.3s;
+}
+
+.navbar nav ul li:hover::after {
+  width: 25px;
+  cursor: pointer;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.showcase {
+  width: 50%;
+  margin-right: auto;
+  border: 2px solid #fff;
+  font-size: 2.5rem;
+}
+
+.showcase h2 {
+  padding: 20px;
+  margin: 0 20px;
+  color: #fff;
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.interactive {
+  height: auto;
+  padding: 7rem 0;
+}
+
+.interactive .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+
+.interactive-img {
+  background: url(images/desktop/image-interactive.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.interactive-text {
+  position: absolute;
+  bottom: -10px;
+  width: 500px;
+  right: 150px;
+  background: #fff;
+  padding: 3rem 0 0 5rem;
+}
+
+.interactive-text h1 {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  color: hsl(0, 0%, 41%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.interactive-text p {
+  line-height: 1.5;
+  color: hsl(0, 0%, 41%);
+}
+
+.deep-earth {
+  background: url(images/desktop/image-deep-earth.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.night-arcade {
+  background: url(images/desktop/image-night-arcade.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.soccer-team {
+  background: url(images/desktop/image-soccer-team.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.the-grid {
+  background: url(images/desktop/image-grid.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.from-up {
+  background: url(images/desktop/image-from-above.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.pocket {
+  background: url(images/desktop/image-pocket-borealis.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.curiosity {
+  background: url(images/desktop/image-curiosity.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.fish-eye {
+  background: url(images/desktop/image-fisheye.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.creations {
+  padding: 150px 0;
+}
+
+.creation-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.creation-header h1 {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: hsl(0, 0%, 41%);
+}
+
+.cta {
+  padding: 10px 40px;
+  background: #fff;
+  border: 1px solid hsl(0, 0%, 41%);
+  transition: ease 0.5s;
+}
+
+.cta:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.creations .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+div h3 {
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+  padding: 0 0 15px 40px;
+}
+
+.creations .grid > div {
+  display: flex;
+  align-items: flex-end;
+  transition: ease-in-out 0.2s;
+}
+
+.creations .grid > div:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.from-up h3 {
+  width: 200px;
+}
+
+footer {
+  height: 150px;
+  background: black;
+  padding: 30px 0;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "logo socials"
+    "footer-nav copyright";
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: flex-start;
+}
+
+.socials {
+  grid-area: socials;
+  justify-self: flex-end;
+}
+
+.socials img {
+  padding: 10px;
+  position: relative;
+}
+
+.socials img::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: ease-in 0.3s;
+}
+
+.socials img:hover::after {
+  cursor: pointer;
+  width: 30px;
+}
+
+.footer-nav {
+  grid-area: footer-nav;
+  justify-self: flex-start;
+  padding: 20px 0;
+}
+
+.copyright {
+  grid-area: copyright;
+  justify-self: flex-end;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 55%);
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+}
+
+footer nav ul li {
+  padding-right: 20px;
+  position: relative;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: ease-in 0.3s;
+}
+
+footer nav ul li:hover::after {
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .showcase h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .interactive {
+    height: auto;
+  }
+
+  .interactive .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-text {
+    text-align: center;
+    position: inherit;
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar nav {
+    padding-top: 20px;
+  }
+
+  .navbar nav li {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .showcase {
+    margin: auto;
+  }
+
+  .main-header {
+    height: 400px;
+  }
+
+  .creations .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-img {
+    width: 85%;
+    margin: auto;
+  }
+
+  .deep-earth {
+    background: url(images/mobile/image-deep-earth.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .night-arcade {
+    background: url(images/mobile/image-night-arcade.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .soccer-team {
+    background: url(images/mobile/image-soccer-team.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fish-eye {
+    background: url(images/mobile/image-fisheye.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .from-up {
+    background: url(images/mobile/image-from-above.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .curiosity {
+    background: url(images/mobile/image-curiosity.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .pocket {
+    background: url(images/mobile/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .the-grid {
+    background: url(images/mobile/image-grid.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .deep-earth,
+  .night-arcade,
+  .soccer-team,
+  .fish-eye,
+  .from-up,
+  .curiosity,
+  .pocket,
+  .the-grid {
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .showcase {
+    margin-top: 30px;
+  }
+
+  .showcase h2 {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .interactive {
+    text-align: center;
+  }
+
+  .interactive-text {
+    width: 400px;
+    right: 0;
+  }
+
+  .interactive-text p {
+    padding: 20px;
+  }
+
+  .interactive .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-img {
+    background: url(images/mobile/image-interactive.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  .deep-earth,
+  .night-arcade,
+  .soccer-team,
+  .fish-eye,
+  .from-up,
+  .curiosity,
+  .pocket,
+  .the-grid {
+    height: 150px;
+  }
+
+  .creations {
+    padding: 0;
+  }
+
+  .deep-earth {
+    background: url(images/mobile/image-deep-earth.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .night-arcade {
+    background: url(images/mobile/image-night-arcade.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .soccer-team {
+    background: url(images/mobile/image-soccer-team.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fish-eye {
+    background: url(images/mobile/image-fisheye.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .from-up {
+    background: url(images/mobile/image-from-above.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .curiosity {
+    background: url(images/mobile/image-curiosity.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .pocket {
+    background: url(images/mobile/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .the-grid {
+    background: url(images/mobile/image-grid.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: auto;
+    margin: 5rem 0 0 0;
+    padding: 3rem 0;
+  }
+
+  footer .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials {
+    order: 1;
+  }
+
+  .copyright {
+    order: 1;
+    font-size: 1.5rem;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer nav ul li {
+    padding: 20px 0;
+    font-size: 1.3rem;
+  }
+
+  .cta {
+    border: 1px solid #000;
+  }
+}
